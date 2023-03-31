@@ -18,6 +18,12 @@
 俊老仓库打开下面,第83行
 https://github.com/dabbing2019/TVBoxOS/blob/main/app/src/main/java/com/github/tvbox/osc/api/ApiConfig.java
 
+takagen99/Box内置源：
+app/src/main/java/com/github/tvbox/osc/api/ApiConfig.java
+133行
+原：String apiUrl = Hawk.get(HawkConfig.API_URL, HomeActivity.getRes().getString(R.string.app_source));
+改：String apiUrl = Hawk.get(HawkConfig.API_URL, "https://agit.ai/xxxxxx/TVBox/raw/branch/master/0.json");
+
 takagen99大佬仓库 改这里;app/src/main/res/values-zh/strings.xml
 
 修改默认缩略图、硬解、dns
